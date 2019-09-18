@@ -20,18 +20,14 @@ p {
   margin: 0;
 }
 
-.toolbar {
-  height: 60px;
-  margin: -8px;
-  display: flex;
-  align-items: center;
+.navbar-menu {
   background-color: #1976d2;
-  color: white;
-  font-weight: 600;
-}
 
-.toolbar img {
-  margin: 0 16px;
+  a {
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+  }
 }
 
 .content {
