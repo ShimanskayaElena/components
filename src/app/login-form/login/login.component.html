@@ -1,1 +1,44 @@
-<p>login works!</p>
+<h5>Error messages</h5>
+<form [formGroup]="loginForm" novalidate>
+  <div class="form-group row">
+    <label for="name" class="col-sm-3 col-form-label">Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control form-control-sm" id="name" formControlName="name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="login" class="col-sm-3 col-form-label">Login</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control form-control-sm" id="login" formControlName="login">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <label for="terms" class="form-check-label">
+          I agree to the <a routerLink="/login/form">terms and conditions</a>
+          <input type="checkbox" class="form-check-input"  id="terms" formControlName="terms" [customErrors]="customErrors">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div formGroupName="address">
+    <div class="form-group row">
+      <label for="city" class="col-sm-3 col-form-label">City</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control form-control-sm" id="city" formControlName="city">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="country" class="col-sm-3 col-form-label">Country</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control form-control-sm" id="country" formControlName="country">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-12">
+      <button type="submit" mat-raised-button>Submit</button>
+    </div>
+  </div>
+</form>

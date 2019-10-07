@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { LoginFormModule } from './login-form/login-form.module';
+import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     NgbModule,
-    LoginFormModule,
-    AppRoutingModule
+    SharedModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

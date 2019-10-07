@@ -11,33 +11,25 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/login/form" routerLinkActive="active-link">Login Form</a>
+        <a class="nav-link" routerLink="/login/form" routerLinkActive="active-link">Error messages</a>
       </li>
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link" routerLink="/home" routerLinkActive="active-link">Home</a>
-      </li>
+      </li>-->
   </ul>
-
 </nav>
 
 <div class="content" role="main">
-
-  <div class="card-container">
-    <span>{{ title }} app is running!</span>
-  </div>
-
   <div class="card-container">
     <router-outlet></router-outlet>
   </div>
-
-  <!--<footer>
-      Love Angular?&nbsp;
-      <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
+  <footer>
+      Если вам понравилось это приложение,&nbsp;
+      <a href="https://github.com/ShimanskayaElena/components" target="_blank" rel="noopener">поставьте, пожалуйста, этому репозиторию звезду!
         <div class="github-star-badge">
             <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-          Star
+          Звезда
         </div>
       </a>
-
-  </footer>-->
+  </footer>
 </div>
