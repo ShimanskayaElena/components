@@ -6,9 +6,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 
 import { ErrorMessagesModule } from '../error-messages/error-messages.module';
+import { CustomInputComponent } from './custom-input/custom-input.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [CustomInputComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -22,7 +23,8 @@ import { ErrorMessagesModule } from '../error-messages/error-messages.module';
     ReactiveFormsModule,
     MatButtonModule,
     MatListModule,
-    ErrorMessagesModule
+    ErrorMessagesModule,
+    CustomInputComponent
   ],
   entryComponents: [],
   providers: []

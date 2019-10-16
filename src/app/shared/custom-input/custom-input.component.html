@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label for="{{label}}">{{label}}</label>
+  <input
+    type="{{type}}"
+    class="form-control form-control-sm"
+    id="{{label}}"
+    (input)="changeValueInput()"
+    (focus)="removeBorder()"
+    (blur)="addBorder()"
+    #customInput
+    [ngClass]="{ invalid:error, valid:onBlur }"
+  >
+</div>

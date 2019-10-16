@@ -7,3 +7,9 @@ This appendix will put together various ways to create useful components and dir
 ## Demo version of the project
 
 You can see the demo version of this project [here](https://shimanskayaelena.github.io/components/).
+
+Deploy to GitHub pages - [angular.io](https://angular.io/guide/deployment#deploy-to-github-pages), [Deploying Angular...](https://codinglatte.com/posts/angular/deploying-angular-apps-github-pages/)
+
+/<project_name>/ = "components"  ||  "https://shimanskayaelena.github.io/components/"
+
+In angular.json  -  "outputPath": "docs"

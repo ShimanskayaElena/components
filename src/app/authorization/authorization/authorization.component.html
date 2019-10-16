@@ -1,0 +1,36 @@
+<div class="container">
+  <h5>Authorization</h5>
+</div>
+<form [formGroup]="authorizationForm" (ngSubmit)="onSubmit()" novalidate>
+  <!-- вместо браузерного input используем свой кастомный элемент CustomInputComponent
+  <div class="form-group row">
+    <label for="login" class="col-sm-3 col-form-label">Login</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control form-control-sm" id="login" formControlName="login">
+    </div>
+  </div>-->
+  <div class="container">
+    <app-custom-input label="Login" type="text" [error]="errorCustomInput" formControlName="login"></app-custom-input>
+  </div>
+  <div class="container">
+    <div class="form-group">
+      <label for="password" class="col-form-label">Password</label>
+      <input type="password" class="form-control form-control-sm" id="password" formControlName="password">
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-group row">
+      <div class="col-12">
+        <button type="submit" mat-raised-button>Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="container">
+  <div class="row">
+    <div class="col">Login: {{authorizationForm.get('login')?.value}}</div>
+  </div>
+  <div class="row">
+    <div class="col">Password: {{authorizationForm.get('password')?.value}}</div>
+  </div>
+</div>
